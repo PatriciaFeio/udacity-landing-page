@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Manipulating the DOM</title>
+    <title>Udacity landing page project</title>
     <!-- Load Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
@@ -18,13 +18,30 @@
   IDs are only used for sections to connect menu achors to sections -->
     <header class="page__header">
       <nav class="navbar__menu">
+        <a href="#"><img src="images/the-void-tattoo-logo.png" /></a>
         <!-- Navigation starts as empty UL that will be populated with JS -->
         <ul id="navbar__list"></ul>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
     <main>
       <header class="main__hero">
-        <h1>Landing Page</h1>
+        <div>
+          <h1>I’m Void Sir.</h1>
+          <p>
+            Tattoos have their own unique power and magic. They not only
+            beautify the body but also the psyche.
+          </p>
+          <button>read more</button>
+        </div>
+        <h2>tattoo expert</h2>
+        <div>
+          <img src="images/hero-image.png" alt="" />
+        </div>
       </header>
       <!-- Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
@@ -32,28 +49,20 @@
     The first section is set to active class by default -->
       <section id="section1" data-nav="Section 1" class="your-active-class">
         <div class="landing__container">
-          <h2>Section 1</h2>
+          <h2>01 <span>my story</span></h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            fermentum metus faucibus lectus pharetra dapibus. Suspendisse
-            potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
-            lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed
-            convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla
-            eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam
-            nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis
-            lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a
-            tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus
-            vitae elit. Integer nec libero venenatis libero ultricies molestie
-            semper in tellus. Sed congue et odio sed euismod.
+            In velit arcu posuere integer. Dolor sit amet, consectetur nun
+            adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed
+            scelerisque praesent duis volutpat laoreet.
           </p>
-
           <p>
-            Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar
-            gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam.
-            Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum
-            consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget
-            elementum tortor mollis non.
+            Nisl, sit molestie commodo congue. Etiam lectus risus in amet.
+            Commodo molestie fames etiam aenean sed. Pellentesque et venenatis
+            amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra
+            faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque
+            imperdiet nunc.
           </p>
+          <button>know more</button>
         </div>
       </section>
       <section id="section2" data-nav="Section 2">
