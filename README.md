@@ -1,8 +1,39 @@
 # Landing Page Project
 
-## Table of Contents
+# Demo
 
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Project Description](#project-description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
 - [Instructions](#instructions)
+
+# Introduction
+
+This is the second mandatory project for the Front End Developer Nanodegree Program sponsored by the Bertelsmann Next Generation Tech Booster Scholarship Program.
+
+The aim of this project is to build a multi-section landing page where the user can navigate through each section using the navigation bar on the top.
+
+[(Back to top)](#table-of-contents)
+
+# Project Description
+
+[(Back to top)](#table-of-contents)
+
+# Installation
+
+[(Back to top)](#table-of-contents)
+
+# Usage
+
+[(Back to top)](#table-of-contents)
+
+# Development
+
+[(Back to top)](#table-of-contents)
 
 ## Instructions
 
