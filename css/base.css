@@ -1,0 +1,44 @@
+:root {
+  /* typography */
+  --font-family: "Raleway", sans-serif;
+  --font-family-oswald: "Oswald", sans-serif;
+  --font-family-contrast: "Rozha One", serif;
+  --font-size-70: 0.875rem; /* 14px */
+  --font-size-80: 1rem; /* 16px, base */
+  --font-size-90: 1.125rem; /* 18px */
+  --font-size-100: 1.25rem; /* 20px */
+  --font-size-200: 1.5rem; /* 24px */
+  --font-size-300: 2.25rem; /* 36px */
+  --font-size-400: 3.75rem; /* 60px */
+  --font-size-500: 4rem; /* 64px */
+  --font-size-600: 5.31rem; /* 85px */
+  --font-size-700: 7.375rem; /* 118px */
+  --font-size-800: 14rem; /* 224px */
+  --font-size-900: 31.25rem; /* 500px */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-italic: italic;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* css reset */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
