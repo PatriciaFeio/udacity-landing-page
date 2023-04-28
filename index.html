@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Udacity landing page project</title>
     <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;1,400&family=Rozha+One&display=swap"
       rel="stylesheet"
     />
     <!-- Load Styles -->
@@ -18,29 +20,34 @@
   IDs are only used for sections to connect menu achors to sections -->
     <header class="page__header">
       <nav class="navbar__menu">
-        <a href="#"><img src="images/the-void-tattoo-logo.png" /></a>
+        <a href="#" class="navbar__logo"
+          ><img
+            src="images/the-void-tattoo-logo.png"
+            alt=""
+            class="navbar__logo-image"
+        /></a>
         <!-- Navigation starts as empty UL that will be populated with JS -->
         <ul id="navbar__list"></ul>
-        <div>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="hamburguer-menu">
+          <span class="hamburguer-menu__bar"></span>
+          <span class="hamburguer-menu__bar"></span>
+          <span class="hamburguer-menu__bar"></span>
         </div>
       </nav>
     </header>
     <main>
       <header class="main__hero">
-        <div>
-          <h1>I’m Void Sir.</h1>
-          <p>
+        <div class="main__hero-container">
+          <h1 class="main__heading">I’m Void Sir.</h1>
+          <p class="main__heading-text default-text">
             Tattoos have their own unique power and magic. They not only
             beautify the body but also the psyche.
           </p>
-          <button>read more</button>
+          <button class="btn-default">read more</button>
         </div>
         <h2>tattoo expert</h2>
-        <div>
-          <img src="images/hero-image.png" alt="" />
+        <div class="main__hero-image-container">
+          <img src="images/hero-image.png" alt="" class="main__hero-image" />
         </div>
       </header>
       <!-- Each Section has an ID (used for the anchor) and 
@@ -62,7 +69,7 @@
             faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque
             imperdiet nunc.
           </p>
-          <button>know more</button>
+          <button class="btn-default">know more</button>
         </div>
       </section>
       <section id="section2" data-nav="Section 2">
