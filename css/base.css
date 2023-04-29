@@ -23,7 +23,6 @@
   --font-weight-bold: 700;
 }
 
-/* css reset */
 *,
 *:before,
 *:after {
@@ -32,6 +31,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 html,
@@ -40,5 +40,63 @@ body {
 }
 
 body {
+  margin: 0;
   line-height: 1.5;
+}
+
+body {
+  background: rgb(136, 203, 171);
+  background: linear-gradient(
+    0deg,
+    rgba(136, 203, 171, 1) 0%,
+    rgba(0, 13, 60, 1) 100%
+  );
+  margin: 0;
+  font-family: var(--font-family);
+  color: #fff;
+}
+
+img {
+  /* display: block; */
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Typeography General*/
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3em;
+  margin: 2em 1rem;
+}
+
+@media only screen and (min-width: 35em) {
+  h1 {
+    font-size: 7em;
+    margin: 2em 4rem 1em;
+  }
+}
+
+/* h2 {
+  border-bottom: 1px solid #cc1;
+  font-family: "Oxygen", Sans-Serif;
+  font-size: 3em;
+  color: #fff;
+} */
+
+h2 {
+  font-family: var(--font-family-oswald);
+  font-size: 5.3125rem;
+  color: #111;
+}
+
+body {
+  background-color: red;
+}
+
+p {
+  line-height: 1.6em;
+  color: #eee;
 }
