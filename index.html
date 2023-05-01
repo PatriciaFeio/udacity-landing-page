@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;1,400&family=Rozha+One&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/0ba5b9d85d.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Load Styles -->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
@@ -28,13 +32,27 @@
         /></a>
         <!-- Navigation starts as empty UL that will be populated with JS -->
         <ul id="navbar__list">
-          <li class="navbar__list-item">home</li>
-          <li class="navbar__list-item">about</li>
-          <li class="navbar__list-item">gallery</li>
-          <li class="navbar__list-item">testimonials</li>
-          <li class="navbar__list-item">interview</li>
-          <li class="navbar__list-item">articles</li>
-          <li class="navbar__list-item">contact</li>
+          <li class="navbar__list-item">
+            <a href="">home</a>
+          </li>
+          <li class="navbar__list-item">
+            <a href="#section1">about</a>
+          </li>
+          <li class="navbar__list-item">
+            <a href="">gallery</a>
+          </li>
+          <li class="navbar__list-item">
+            <a href="">testimonials</a>
+          </li>
+          <li class="navbar__list-item">
+            <a href="">interview</a>
+          </li>
+          <li class="navbar__list-item">
+            <a href="">articles</a>
+          </li>
+          <li class="navbar__list-item">
+            <a href="">contact</a>
+          </li>
         </ul>
         <div class="hamburguer-menu">
           <span class="hamburguer-menu__bar"></span>
@@ -64,8 +82,10 @@
     The first section is set to active class by default -->
       <section id="section1" data-nav="Section 1" class="your-active-class">
         <div class="landing__container">
-          <img src="images/number.png" />
-          <h2>my story</h2>
+          <div>
+            <img src="images/number-one.png" />
+            <h2>my story</h2>
+          </div>
           <p>
             In velit arcu posuere integer. Dolor sit amet, consectetur nun
             adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed
@@ -80,57 +100,113 @@
           </p>
           <button class="btn-black">know more</button>
         </div>
+        <div class="landing__container">
+          <h2>what i do</h2>
+          <div>
+            <div>
+              <p>90%</p>
+              <p>full body tattoo</p>
+            </div>
+            <div>
+              <p>80%</p>
+              <p>safely piercing</p>
+            </div>
+            <div>
+              <p>75%</p>
+              <p>full colour tattoo</p>
+            </div>
+            <div>
+              <p>95%</p>
+              <p>temporary tattoo</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="section2" data-nav="Section 2">
         <div class="landing__container">
-          <h2>Section 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            fermentum metus faucibus lectus pharetra dapibus. Suspendisse
-            potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
-            lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed
-            convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla
-            eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam
-            nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis
-            lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a
-            tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus
-            vitae elit. Integer nec libero venenatis libero ultricies molestie
-            semper in tellus. Sed congue et odio sed euismod.
-          </p>
-
-          <p>
-            Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar
-            gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam.
-            Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum
-            consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget
-            elementum tortor mollis non.
-          </p>
+          <div>
+            <img src="images/number-two.png" alt="" />
+            <h2>check my gallery</h2>
+          </div>
+          <div>
+            <img src="images/gallery-img1.png" alt="" />
+            <img src="images/gallery-img2.png" alt="" />
+            <img src="images/gallery-img3.png" alt="" />
+            <img src="images/gallery-img4.png" alt="" />
+            <img src="images/gallery-img5.png" alt="" />
+            <img src="images/gallery-img6.png" alt="" />
+            <img src="images/gallery-img7.png" alt="" />
+            <img src="images/gallery-img8.png" alt="" />
+          </div>
+          <button class="btn--white">view all</button>
         </div>
       </section>
       <section id="section3" data-nav="Section 3">
         <div class="landing__container">
-          <h2>Section 3</h2>
+          <div>
+            <img src="images/number-three.png" alt="" />
+            <h2>testimonials</h2>
+          </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            fermentum metus faucibus lectus pharetra dapibus. Suspendisse
-            potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
-            lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed
-            convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla
-            eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam
-            nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis
-            lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a
-            tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus
-            vitae elit. Integer nec libero venenatis libero ultricies molestie
-            semper in tellus. Sed congue et odio sed euismod.
+            The entire team is extremely kind and friendly. They're fantastic.
+            They're great at what they do! And it's unique. They will properly
+            consult with you.
           </p>
-
+        </div>
+      </section>
+      <section id="section4" data-nav="Section 4">
+        <div class="landing__container">
+          <div>
+            <img src="images/number-four.png" alt="" />
+            <h2>interviews</h2>
+          </div>
+          <img src="images/interview-img.png" alt="" />
           <p>
-            Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar
-            gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam.
-            Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum
-            consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget
-            elementum tortor mollis non.
+            “Consider what you desire. Your tattoo artist will never tell you
+            what tattoo to have.”
           </p>
+        </div>
+      </section>
+      <section id="section5" data-nav="Section 5">
+        <div class="landing__container">
+          <div>
+            <img src="images/number-five.png" alt="" />
+            <h2>read new articles</h2>
+          </div>
+          <div>
+            <figure>
+              <img src="images/article-img1.png" alt="" />
+              <figcaption>What is the story behind tattooing</figcaption>
+              <small>Feb 16, 2021</small>
+            </figure>
+            <figure>
+              <img src="images/article-img2.png" alt="" />
+              <figcaption>Top 10 tattoo myths & misconceptions</figcaption>
+              <small>Feb 17, 2021</small>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="section6" data-nav="Section 6">
+        <div class="landing__container">
+          <div>
+            <img src="images/number-six.png" alt="" />
+            <h2>get in touch with me</h2>
+          </div>
+          <div>
+            <div>
+              <p>la office</p>
+              <p>
+                In velit arcu posuere integer sit amet, consectetur nun
+                adipiscing elit. Duis porttitor massa tellus
+              </p>
+              <div>
+                <i class="fas-solid fa-location-dot"></i>
+                <p>784 Norman Street, Los Angeles</p>
+              </div>
+            </div>
+          </div>
+          <div></div>
         </div>
       </section>
     </main>
