@@ -209,8 +209,48 @@ section.your-active-class .landing__container::after {
   }
 }
 
-.address::before {
+.address-icon::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f3c5";
+}
+
+.phone-icon::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f095";
+}
+
+.envelope-icon::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e0";
+}
+
+.facebook-icon::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f39e";
+}
+
+.footer__facebook-logo {
+  width: 10px;
+}
+
+.footer__instagram-logo {
+  width: 25px;
+}
+
+.footer__pinterest-logo {
+  width: 25px;
+}
+
+.footer__twitter-logo {
+  width: 25px;
+}
+
+.submit-email::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1d8";
 }
