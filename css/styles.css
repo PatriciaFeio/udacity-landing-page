@@ -15,12 +15,32 @@
 }
 
 main {
-  margin: 10vh 1em 10vh;
+  /* margin: 10vh 1em 10vh; */
+  margin: 0 1em 10vh;
+}
+
+.main__hero {
+  margin: 0 -1em;
 }
 
 .main-hero {
   min-height: 40vh;
   padding-top: 3em;
+}
+
+.main__hero-image-container {
+  position: relative;
+}
+
+.main__hero-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.main__hero-image {
+  position: relative;
+  z-index: 0;
 }
 
 section {
@@ -67,11 +87,23 @@ button {
 /* Header Styles */
 .page__header {
   background: #fff;
-  position: fixed;
-  top: 0;
+  /* position: fixed;
+  top: 0; */
   padding: 30px 0 30px 50px;
   width: 100%;
-  z-index: 5;
+  height: auto;
+  /* z-index: 5; */
+}
+
+/* Hero Styles */
+.main__heading-text--xxs {
+  position: absolute;
+  bottom: 0;
+  font-size: clamp(0.1rem, 12vw + 1rem, 14rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  color: rgba(196, 196, 196, 0.1);
+  -webkit-text-stroke: 1px #fff;
 }
 
 /* Footer Styles */
