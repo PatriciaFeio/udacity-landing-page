@@ -45,15 +45,16 @@ body {
 }
 
 body {
-  background: rgb(136, 203, 171);
+  /* background: rgb(136, 203, 171);
   background: linear-gradient(
     0deg,
     rgba(136, 203, 171, 1) 0%,
     rgba(0, 13, 60, 1) 100%
-  );
+  ); */
+  background: #e5e5e5;
   margin: 0;
   font-family: var(--font-family);
-  color: #fff;
+  /* color: #555; */
 }
 
 img {
@@ -65,7 +66,7 @@ button {
   cursor: pointer;
 }
 
-/* Typeography General*/
+/* Typography General*/
 h1 {
   font-family: "Fira Sans", sans-serif;
   font-size: 3em;
@@ -92,9 +93,9 @@ h2 {
   color: #111;
 }
 
-body {
+/* body {
   background-color: red;
-}
+} */
 
 p {
   line-height: 1.6em;
