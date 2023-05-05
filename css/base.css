@@ -23,6 +23,7 @@
   --font-weight-bold: 700;
 }
 
+/* Reset */
 *,
 *:before,
 *:after {
@@ -44,6 +45,7 @@ body {
   line-height: 1.5;
 }
 
+/* ---- Base Rules ---- */
 body {
   /* background: rgb(136, 203, 171);
   background: linear-gradient(
@@ -51,15 +53,14 @@ body {
     rgba(136, 203, 171, 1) 0%,
     rgba(0, 13, 60, 1) 100%
   ); */
-  background: #e5e5e5;
-  margin: 0;
+  background: #f2f2f2;
   font-family: var(--font-family);
-  /* color: #555; */
+  color: #555;
 }
 
 img {
   /* display: block; */
-  width: 100%;
+  /*  width: 100%; */
 }
 
 button {
@@ -67,7 +68,7 @@ button {
 }
 
 /* Typography General*/
-h1 {
+/* h1 {
   font-family: "Fira Sans", sans-serif;
   font-size: 3em;
   margin: 2em 1rem;
@@ -78,7 +79,7 @@ h1 {
     font-size: 7em;
     margin: 2em 4rem 1em;
   }
-}
+} */
 
 /* h2 {
   border-bottom: 1px solid #cc1;
@@ -87,17 +88,39 @@ h1 {
   color: #fff;
 } */
 
-h2 {
-  font-family: var(--font-family-oswald);
-  font-size: 5.3125rem;
-  color: #111;
+/* Typeography General*/
+h1 {
+  font-family: var(--font-family-contrast);
+  font-size: var(--font-size-500);
+  color: #fff;
+  letter-spacing: 0.02em;
+  line-height: 72px;
 }
 
-/* body {
-  background-color: red;
-} */
+@media only screen and (min-width: 35em) {
+  h1 {
+    font-size: var(--font-size-700);
+    /*   margin: 2em 4rem 1em; */
+  }
+}
+
+h2 {
+  font-family: var(--font-family-oswald);
+  font-size: var(--font-size-600);
+  color: #111;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
 p {
+  font-size: var(--font-size-90);
   line-height: 1.6em;
-  color: #eee;
+  line-height: 187%;
+  letter-spacing: 0.02em;
+  /*  color: #eee; */
+}
+
+a {
+  font-family: var(--font-family);
+  text-decoration: none;
 }

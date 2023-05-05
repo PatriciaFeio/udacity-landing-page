@@ -17,16 +17,33 @@
 main {
   /* margin: 10vh 1em 10vh; */
   margin: 0 1em 10vh;
+  /*  width: 100%; */
 }
+
+/* @media only screen and (min-width: 35em) {
+  main {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
 
 .main__hero {
-  margin: 0 -1em;
+  /* margin: 0 -1em; */
 }
 
-.main-hero {
+/* @media only screen and (min-width: 35em) {
+  .main__hero {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+  }
+} */
+
+/* .main-hero {
   min-height: 40vh;
   padding-top: 3em;
-}
+} */
 
 .main__hero-image-container {
   position: relative;
@@ -41,11 +58,12 @@ main {
 .main__hero-image {
   position: relative;
   z-index: 0;
+  width: 100%;
 }
 
 section {
   position: relative;
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
 
 /* ---- Module Rules ---- */
@@ -63,20 +81,20 @@ button {
 .navbar__menu li {
   display: inline-block;
   color: #111;
-  letter-spacing: 0.08empx;
+  letter-spacing: 0.08px;
   font-family: var(--font-family-oswald);
   font-size: 18px;
   line-height: 27px;
   text-transform: uppercase;
 }
 
-.navbar__menu .menu__link {
+/* .navbar__menu .menu__link {
   display: block;
   padding: 1em;
   font-weight: bold;
   text-decoration: none;
   color: #000;
-}
+} */
 
 .navbar__menu .menu__link:hover {
   background: #333;
@@ -86,7 +104,7 @@ button {
 
 /* Header Styles */
 .page__header {
-  background: #fff;
+  background: #f2f2f2;
   /* position: fixed;
   top: 0; */
   padding: 30px 0 30px 50px;
@@ -97,13 +115,20 @@ button {
 
 /* Hero Styles */
 .main__heading-text--xxs {
+  display: none;
   position: absolute;
   bottom: 0;
-  font-size: clamp(0.1rem, 12vw + 1rem, 14rem);
+  font-size: clamp(1rem, 12vw + 1rem, 14rem);
   font-weight: var(--font-weight-bold);
   line-height: 1;
   color: rgba(196, 196, 196, 0.1);
   -webkit-text-stroke: 1px #fff;
+}
+
+@media only screen and (min-width: 31em) {
+  .main__heading-text--xxs {
+    display: block;
+  }
 }
 
 /* Footer Styles */
@@ -124,6 +149,12 @@ button {
   text-align: left;
 }
 
+.landing__container-gallery {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
+
 @media only screen and (min-width: 35em) {
   .landing__container {
     max-width: 50em;
@@ -131,16 +162,16 @@ button {
   }
 }
 
-section:nth-of-type(even) .landing__container {
+/* section:nth-of-type(even) .landing__container {
   margin-right: 0;
   margin-left: auto;
   text-align: right;
-}
+} */
 
 /* Background Circles */
 /* Note that background circles are created with psuedo elements before and after */
 /* Circles appear to be random do to use of :nth-of-type psuedo class */
-section:nth-of-type(odd) .landing__container::before {
+/* section:nth-of-type(odd) .landing__container::before {
   content: "";
   background: rgba(255, 255, 255, 0.187);
   position: absolute;
@@ -150,9 +181,9 @@ section:nth-of-type(odd) .landing__container::before {
   border-radius: 50%;
   opacity: 0;
   transition: ease 0.5s all;
-}
+} */
 
-section:nth-of-type(even) .landing__container::before {
+/* section:nth-of-type(even) .landing__container::before {
   content: "";
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -169,9 +200,9 @@ section:nth-of-type(even) .landing__container::before {
   border-radius: 50%;
   opacity: 0;
   transition: ease 0.5s all;
-}
+} */
 
-section:nth-of-type(3n) .landing__container::after {
+/* section:nth-of-type(3n) .landing__container::after {
   content: "";
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -188,9 +219,9 @@ section:nth-of-type(3n) .landing__container::after {
   border-radius: 50%;
   opacity: 0;
   transition: ease 0.5s all;
-}
+} */
 
-section:nth-of-type(3n + 1) .landing__container::after {
+/* section:nth-of-type(3n + 1) .landing__container::after {
   content: "";
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -207,19 +238,37 @@ section:nth-of-type(3n + 1) .landing__container::after {
   border-radius: 50%;
   opacity: 0;
   transition: ease 0.5s all;
+} */
+
+.landing__container div {
+  border: 1px solid #d9d9d9;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.landing__img-number {
+  max-width: 50%;
+}
+
+.landing__circle {
+  border: 1px solid #d9d9d9;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
 
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
-section.your-active-class {
+/* section.your-active-class {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.1) 0%,
     rgba(0, 0, 0, 0) 100%
   );
-}
+} */
 
 section.your-active-class .landing__container::before {
   opacity: 1;
