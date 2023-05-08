@@ -23,43 +23,48 @@
     <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
     <header class="page__header">
+      <a href="#" class="navbar__logo"
+        ><img
+          src="images/the-void-tattoo-logo.png"
+          alt=""
+          class="navbar__logo-image"
+      /></a>
+      <input
+        type="checkbox"
+        id="navbar__toggle"
+        class="navbar__toggle"
+        name=""
+        id=""
+      />
       <nav class="navbar__menu">
-        <a href="#" class="navbar__logo"
-          ><img
-            src="images/the-void-tattoo-logo.png"
-            alt=""
-            class="navbar__logo-image"
-        /></a>
         <!-- Navigation starts as empty UL that will be populated with JS -->
         <ul id="navbar__list">
           <li class="navbar__list-item">
-            <a href="">home</a>
+            <a class="menu__link" href="">home</a>
           </li>
           <li class="navbar__list-item">
-            <a href="#section1">about</a>
+            <a class="menu__link" href="#section1">about</a>
           </li>
           <li class="navbar__list-item">
-            <a href="">gallery</a>
+            <a class="menu__link" href="">gallery</a>
           </li>
           <li class="navbar__list-item">
-            <a href="">testimonials</a>
+            <a class="menu__link" href="">testimonials</a>
           </li>
           <li class="navbar__list-item">
-            <a href="">interview</a>
+            <a class="menu__link" href="">interview</a>
           </li>
           <li class="navbar__list-item">
-            <a href="">articles</a>
+            <a class="menu__link" href="">articles</a>
           </li>
           <li class="navbar__list-item">
-            <a href="">contact</a>
+            <a class="menu__link" href="">contact</a>
           </li>
         </ul>
-        <div class="hamburguer-menu">
-          <span class="hamburguer-menu__bar"></span>
-          <span class="hamburguer-menu__bar"></span>
-          <span class="hamburguer-menu__bar"></span>
-        </div>
       </nav>
+      <label for="navbar__toggle" class="navbar__toggle-label">
+        <span></span>
+      </label>
     </header>
     <main>
       <header class="main__hero">
@@ -73,7 +78,7 @@
         </div> -->
         <!-- <p>tattoo expert</p> -->
         <div class="main__hero-image-container">
-          <div class="main__hero-container">
+          <div class="main__hero-container-text">
             <h1 class="main__heading">I’m Void Sir.</h1>
             <p class="main__heading-text default-text">
               Tattoos have their own unique power and magic. They not only
