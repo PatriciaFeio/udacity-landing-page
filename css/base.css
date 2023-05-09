@@ -3,8 +3,8 @@
   --font-family: "Raleway", sans-serif;
   --font-family-oswald: "Oswald", sans-serif;
   --font-family-contrast: "Rozha One", serif;
-  --font-size-70: 0.875rem; /* 14px */
-  --font-size-80: 1rem; /* 16px, base */
+  --font-size-default: 1rem;
+  --font-size-80: 0.875rem; /* 14px */
   --font-size-90: 1.125rem; /* 18px */
   --font-size-100: 1.25rem; /* 20px */
   --font-size-200: 1.5rem; /* 24px */
@@ -61,10 +61,16 @@ body {
 img {
   /* display: block; */
   /*  width: 100%; */
+  max-width: 100%;
+  height: auto;
 }
 
 button {
   cursor: pointer;
+}
+
+section {
+  /*  padding-top: 250px; */
 }
 
 /* Typography General*/
@@ -88,16 +94,30 @@ button {
   color: #fff;
 } */
 
-/* Typeography General*/
+/* Typography General*/
 h1 {
   font-family: var(--font-family-contrast);
-  font-size: var(--font-size-500);
+  font-size: var(--font-size-200);
   color: #fff;
   letter-spacing: 0.02em;
-  line-height: 72px;
+  /* line-height: 72px; */
 }
 
 @media only screen and (min-width: 35em) {
+  h1 {
+    font-size: var(--font-size-300);
+    /*   margin: 2em 4rem 1em; */
+  }
+}
+
+@media only screen and (min-width: 55em) {
+  h1 {
+    font-size: var(--font-size-400);
+    /*   margin: 2em 4rem 1em; */
+  }
+}
+
+@media only screen and (min-width: 75em) {
   h1 {
     font-size: var(--font-size-700);
     /*   margin: 2em 4rem 1em; */
@@ -106,16 +126,25 @@ h1 {
 
 h2 {
   font-family: var(--font-family-oswald);
-  font-size: var(--font-size-600);
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-regular);
   color: #111;
   letter-spacing: 0.03em;
+  line-height: 1;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 55em) {
+  h2 {
+    font-size: var(--font-size-600);
+    /*   margin: 2em 4rem 1em; */
+  }
 }
 
 p {
   font-size: var(--font-size-90);
-  line-height: 1.6em;
-  line-height: 187%;
+  /* line-height: 1.6em;
+  line-height: 187%; */
   letter-spacing: 0.02em;
   /*  color: #eee; */
 }
@@ -123,4 +152,12 @@ p {
 a {
   font-family: var(--font-family);
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.default-text {
+  color: #fff;
 }
